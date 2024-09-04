@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+        }
+        #content {
+            padding: 20px;
+        }
+        #content p {
+            color: darkred;
+            font-size: 18px;
+        }
+        #button {
+            background-color: yellow;
+            color: black;
+            padding: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        #footer {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>Welcome to My Webpage</h1>
+</div>
+
+<div id="content">
+    <p>This is a simple webpage with some basic content. Click the button below to see a message.</p>
+    <button id="button">Click Me!</button>
+    <p id="message"></p>
+</div>
+
+<div id="footer">
+    <p>Footer Content</p>
+</div>
+
+<script>
+    document.getElementById("button").onclick = function() {
+        document.getElementById("message").innerHTML = "Hello! You clicked the button!";
+        document.getElementById("message").style.color = "green";
+    }
+</script>
+
+</body>
+</html>
